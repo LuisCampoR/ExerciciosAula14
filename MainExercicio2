@@ -1,7 +1,0 @@
-from Carro import Carro
-
-c1 = Carro("Gol", "2008")
-
-print(c1.modelo)
-print(c1.ano)
-
