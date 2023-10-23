@@ -26,13 +26,12 @@ class Carro(Veiculo):
         self._velocidade = velocidade
         print(f'O {self._tipo} está acelerando, velocidade atual: {self._velocidade}')
 
-
 #Classe Moto
 
 from Veiculo import Veiculo
 
 class Moto(Veiculo):
-    def __init__(self, tipo ="Moto", velocidade =""):
+    def __init__(self, tipo, velocidade):
         super().__init__(tipo, velocidade)
 
     def descricao(self):
@@ -41,15 +40,6 @@ class Moto(Veiculo):
     def acelerarVeiculo(self, velocidade):
         self._velocidade = velocidade
         print(f'A {self._tipo} está acelerando, velocidade atual: {self._velocidade}')
-
-
-#Main
-
-from Carro import Carro
-
-c1 = Carro("Honda", 120)
-
-print(c1.descricao)
 
 
 
