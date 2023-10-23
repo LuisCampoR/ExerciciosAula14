@@ -1,0 +1,29 @@
+#Classe Forma
+
+from abc import ABC, abstractmethod
+
+class Forma(ABC):
+    @abstractmethod
+    def calcularArea(self):
+        pass
+
+#Classe Circulo
+
+from Forma import Forma
+
+class Circulo(Forma):
+    def calcularArea(self, raio):
+        self._raio = raio
+        print(f'A area de um circulo é: {3.14 * (self._raio * self._raio)}')
+
+
+#Classe Retangulo
+
+from Forma import Forma
+
+class Retangulo(Forma):
+    def calcularArea(self, base, altura):
+        self._base = base
+        self._altura = altura
+        print(f'A area de um retangulo é: {self._base * self._altura}')
+
