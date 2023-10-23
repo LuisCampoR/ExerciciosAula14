@@ -1,0 +1,10 @@
+from Carro import Carro
+from Moto import Moto
+
+c1 = Carro("Honda", 120)
+m1 = Moto("Yamaha", 200)
+
+c1.descricao()
+m1.descricao()
+c1.acelerarVeiculo(150)
+m1.acelerarVeiculo(100)
