@@ -1,0 +1,8 @@
+from Circulo import Circulo
+from Retangulo import Retangulo
+
+r1 = Retangulo()
+c1 = Circulo()
+
+r1.calcularArea(9, 18)
+c1.calcularArea(3)
